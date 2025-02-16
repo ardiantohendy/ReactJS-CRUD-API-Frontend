@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: border-box;
+}
+
+.table-books {
+  width: 60%;
+  height: fit-content;
+}
