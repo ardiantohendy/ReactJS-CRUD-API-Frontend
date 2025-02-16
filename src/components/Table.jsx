@@ -7,6 +7,8 @@ function TableContent() {
             <th>Title</th>
             <th>Author</th>
             <th>Published Year</th>
+            <th>Created Date</th>
+            <th>Edit/Delete</th>
           </tr>
         </thead>
         <tbody>
@@ -14,6 +16,15 @@ function TableContent() {
             <td>Empty...</td>
             <td>Empty...</td>
             <td>Empty...</td>
+            <td>Empty...</td>
+            <td>
+              <a className="edit" href="#">
+                Edit
+              </a>
+              <a className="delete" href="#">
+                Delete
+              </a>
+            </td>
           </tr>
         </tbody>
       </table>

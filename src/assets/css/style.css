@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .main p {
+  margin: 2rem;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.table-books {
+  width: 100%;
+  height: fit-content;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  text-align: center;
+  background-color: white;
+}
+
+.table-books thead tr {
+  background-color: rgb(54, 234, 144);
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.table-books th,
+.table-books td {
+  padding: 15px 15px;
+}
+
+.table-books tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table-books tbody a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.5rem 0.8rem;
+  margin: 0 3px 0 3px;
+}
+
+.table-books tbody a.edit {
+  background-color: rgb(61, 232, 58);
+}
+
+.table-books tbody a.delete {
+  background-color: rgb(255, 55, 0);
+}

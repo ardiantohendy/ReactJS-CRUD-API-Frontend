@@ -1,4 +1,5 @@
 import TableContent from "./Table";
+import "../assets/css/style.css";
 
 function Mainpage() {
   return (
