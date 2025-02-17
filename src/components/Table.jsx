@@ -2,14 +2,14 @@ import React from "react";
 import { deleteBook } from "../api/Api";
 
 function TableContent({ books }) {
-  // const handleDelete = async (bookId) => {
-  //   const success = await deleteBook(bookId);
-  //   if (success) {
-  //     alert("Book deleted successfully!"); // Panggil ulang fetch data setelah delete
-  //   } else {
-  //     alert("Failed to delete book!");
-  //   }
-  // };
+  const handleDelete = async (bookId) => {
+    const success = await deleteBook(bookId);
+    if (success) {
+      alert("Book deleted successfully!");
+    } else {
+      alert("Failed to delete book!");
+    }
+  };
 
   return (
     <>
@@ -35,7 +35,7 @@ function TableContent({ books }) {
                   <a className="edit" href="#">
                     Edit
                   </a>
-                  <button className="delete" onClick={() => deleteBook(book.id)}>
+                  <button className="delete" onClick={() => handleDelete(book.id)}>
                     Delete
                   </button>
                 </td>
