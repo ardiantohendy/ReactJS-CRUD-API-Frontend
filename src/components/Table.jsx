@@ -1,6 +1,16 @@
 import React from "react";
+import { deleteBook } from "../api/Api";
 
 function TableContent({ books }) {
+  // const handleDelete = async (bookId) => {
+  //   const success = await deleteBook(bookId);
+  //   if (success) {
+  //     alert("Book deleted successfully!"); // Panggil ulang fetch data setelah delete
+  //   } else {
+  //     alert("Failed to delete book!");
+  //   }
+  // };
+
   return (
     <>
       <table className="table-books">
@@ -25,9 +35,9 @@ function TableContent({ books }) {
                   <a className="edit" href="#">
                     Edit
                   </a>
-                  <a className="delete" href="#">
+                  <button className="delete" onClick={() => deleteBook(book.id)}>
                     Delete
-                  </a>
+                  </button>
                 </td>
               </tr>
             ))
